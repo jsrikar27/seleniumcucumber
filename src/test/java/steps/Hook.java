@@ -32,12 +32,8 @@ public class Hook extends BaseUtil{
     @Before
     public void InitializeTest(Scenario scenario) {
         base.scenarioDef = base.features.createNode(scenario.getName());
-     //   WebDriverManager.Edgedriver().setup();
-        // ChromeOptions chromeOptions = new ChromeOptions();
-        // chromeOptions.addArguments("--headless");
-        System.setProperty("webdriver.edge.verboseLogging", "true");
-       EdgeDriverService service = EdgeDriverService.createDefaultService();
-       EdgeDriver driver = new EdgeDriver(service);
+         System.setProperty("webdriver.edge.driver", ""C:\Users\srika\OneDrive\Desktop\msedgedriver.exe"");
+       EdgeDriver driver = new EdgeDriver();
        
     }
 
