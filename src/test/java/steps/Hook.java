@@ -34,7 +34,7 @@ public class Hook extends BaseUtil{
     @Before
     public void InitializeTest(Scenario scenario) {
         base.scenarioDef = base.features.createNode(scenario.getName());
-        System.setProperty("webdriver.http.factory", "jdk-http-client");
+     //   System.setProperty("webdriver.http.factory", "jdk-http-client");
      //   System.setProperty("webdriver.edge.verboseLogging", "true");
          System.setProperty("webdriver.edge.driver", "C:\\driver\\msedgedriver.exe");
          WebDriver driver = new EdgeDriver();
