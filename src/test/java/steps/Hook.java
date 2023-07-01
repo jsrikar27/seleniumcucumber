@@ -35,7 +35,7 @@ public class Hook extends BaseUtil{
         WebDriverManager.Edgedriver().setup();
         // ChromeOptions chromeOptions = new ChromeOptions();
         // chromeOptions.addArguments("--headless");
-        base.Driver = new Edgedriver(chromeOptions);
+        base.Driver = new Edgedriver();
     }
 
 
